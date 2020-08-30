@@ -1,0 +1,6 @@
+ext{
+    config=[
+            kotlin_version      :"1.3.72",
+            gradle_version      :"3.5.0"
+    ]
+}
