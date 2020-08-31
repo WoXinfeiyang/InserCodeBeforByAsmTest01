@@ -4,13 +4,13 @@ apply plugin: 'kotlin-android-extensions'
 apply from:'../config.gradle'
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.1"
+    compileSdkVersion rootProject.ext.config["compile_sdk_version"]
+    buildToolsVersion rootProject.ext.config["build_tool_version"]
 
     defaultConfig {
         applicationId "com.fxj.inserCodeBeforByAsmTest01"
-        minSdkVersion 16
-        targetSdkVersion 30
+        minSdkVersion rootProject.ext.config["min_sdk_version"]
+        targetSdkVersion rootProject.ext.config["target_sdk_version"]
         versionCode 1
         versionName "1.0"
 
